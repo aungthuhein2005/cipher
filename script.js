@@ -30,7 +30,7 @@ const fileEncrypt = (file, key) => {
             const encryptBlob = new Blob([binaryData], { type: file.type });
             const downloadLink = document.createElement('a');
             downloadLink.href = URL.createObjectURL(encryptBlob);
-            downloadLink.download = fileNameWithoutExtension + ".cipher";
+            downloadLink.download = fileNameWithoutExtension;
             downloadFiles.push(downloadLink);
             resolve(); // Resolve the Promise to signal completion
         };
