@@ -30,7 +30,7 @@ const fileEncrypt = (file, key) => {
             const encryptBlob = new Blob([binaryData], { type: file.type });
             const downloadLink = document.createElement('a');
             downloadLink.href = URL.createObjectURL(encryptBlob);
-            downloadLink.download = fileNameWithoutExtension;
+            downloadLink.download = fileNameWithoutExtension + ".cipher";
             downloadFiles.push(downloadLink);
             resolve(); // Resolve the Promise to signal completion
         };
@@ -87,11 +87,11 @@ generate.addEventListener('click', async (e) => {
         await Promise.all(selectedFiles.map((file,index) => {
             progressLength += progressStep;
             progressBar.style.width = `${progressLength}%`;
+            progressBar.innerHTML = `${progressLength}%`;
             return (encrypt.checked) ? fileEncrypt(file, keyInput.value) : fileDecrypt(file, keyInput.value);
         }));
-
+        progressBar.innerHTML = "Ready To Download";
         download.disabled = false;
-        
     }
 });
 
@@ -102,6 +102,7 @@ download.addEventListener('click',()=>{
     download.disabled = true;
     keyInput.value = '';
     fileInput.value = '';
+    progressBar.innerHTML = '';
     progressBar.parentElement.classList.add('d-none'); 
 })
 
