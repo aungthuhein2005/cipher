@@ -24,7 +24,10 @@
                 <img src="encryption.png" width="45px" alt="">
                 <span class="fs-3 fw-bold text-uppercase" style="font-family: Orbitron;">cipher</span>
             </a>
-            <a href="" class="">FAQs</a>
+            <div>
+                <a href="faqs.html" class="me-3">FAQs</a>
+                <button id="contact" class="btn btn-sm btn-outline-secondary">Contact</button>
+            </div>
         </div>
     </nav>
     <div class="container">
@@ -32,40 +35,40 @@
             <div class="col-lg-6 m-auto py-3 rounded">
                 <h3 class="text-center">FAQs</h3>
                 <hr />
-                <dt>Q: What is Cipher?</dt>
-                <dd>A: Cipher is a file encryption and decryption tool designed to secure your files using a key-based
-                    algorithm.</dd>
 
-                <!-- <dt>Q: How does Cipher work?</dt>
-                <dd>A: Cipher uses a key-based XOR encryption algorithm to encrypt and decrypt files. You provide a key, and the tool performs the encryption or decryption accordingly.</dd> -->
+                <dl>
+                    <dt>What is Cipher?</dt>
+                    <dd>Cipher is a web application that allows you to encrypt and decrypt files using a key. It provides a simple and secure way to protect your sensitive data.</dd>
+                
+                    <dt>How does Cipher work?</dt>
+                    <dd>Cipher uses a key-based encryption algorithm to transform the content of your files. When you encrypt a file, it becomes unreadable without the correct key. Decrypting the file requires the same key that was used for encryption.</dd>
+                
+                    <dt>Is Cipher secure?</dt>
+                    <dd>Cipher employs industry-standard encryption techniques to secure your files. However, it's crucial to choose a strong and unique key to enhance security. Avoid using easily guessable keys.</dd>
+                
+                    <dt>Can I encrypt multiple files at once?</dt>
+                    <dd>Yes, Cipher allows you to encrypt or decrypt multiple files simultaneously. Simply select the files you want to process before clicking the "Generate" button.</dd>
 
-                <dt>Q: Can I encrypt multiple files at once?</dt>
-                <dd>A: Yes, you can select multiple files for encryption or decryption using the "Enter File" input.
-                </dd>
+                    <dt>How can I contact you?</dt>
+                    <dd>You can contact us by clicking the "Contact" button on our website.</dd>
 
-                <!-- <dt>Q: Is Cipher secure for sensitive data?</dt>
-                <dd>A: The XOR-based encryption used in Cipher is a basic example for educational purposes. It is not considered secure for real-world cryptographic purposes. For sensitive data, it is recommended to use established cryptographic libraries and algorithms.</dd> -->
+                    <dt>How do I download the encrypted/decrypted files?</dt>
+                    <dd>After the encryption or decryption process is complete, the "Download" button becomes active. Click on it to download the processed files. Make sure to save your key for later decryption.</dd>
+                
+                    <dt>What should I do if I forget my key?</dt>
+                    <dd>Unfortunately, if you forget your key, there is no way to recover it. Make sure to use a memorable yet secure key, and consider keeping a backup in a secure location.</dd>
+                
+                    <dt>Is my data stored on Cipher's servers?</dt>
+                    <dd>No, Cipher is a client-side application, meaning all encryption and decryption processes occur on your device. Your files and keys are not transmitted or stored on any external servers.</dd>
+                
+                    <dt>What browsers are supported by Cipher?</dt>
+                    <dd>Cipher is designed to work on modern web browsers. It is recommended to use the latest versions of popular browsers such as Chrome, Firefox, Safari, or Edge for the best experience.</dd>
 
-                <dt>Q: Can I use long and complex keys for better security?</dt>
-                <dd>A: Yes, using long and complex keys can enhance the security of your encryption. Make sure to use a
-                    key that is hard to guess and is not easily prone to brute-force attacks.</dd>
+                    <dt>Q: Can I use long and complex keys for better security?</dt>
+                    <dd>A: Yes, using long and complex keys can enhance the security of your encryption. Make sure to use a key that is hard to guess and is not easily prone to brute-force attacks.</dd>
+                </dl>
+                
 
-                <dt>Q: What happens if I forget the key used for encryption?</dt>
-                <dd>A: If you forget the key used for encryption, it is usually not possible to recover the original
-                    data. It's crucial to remember or securely store your encryption key.</dd>
-
-                <dt>Q: Can I decrypt files without the original key?</dt>
-                <dd>A: No, the decryption process requires the original key. Without the correct key, it is not possible
-                    to decrypt the files.</dd>
-
-                <dt>Q: Are there any file size limitations for encryption?</dt>
-                <dd>A: Cipher does not have strict file size limitations, but very large files may take longer to
-                    process. It's recommended to use Cipher for files of reasonable size.</dd>
-                <!-- 
-                <p>
-                    <i class=""></i> Copyright - 2024
-                  </p>
-                  <p>Developed by ATH</p> -->
             </div>
             <div class="col-12 text-center fw-bold my-4 text-secondary text-opacity-50">
                 <span>Copyright - 2024</span>
