@@ -26,7 +26,7 @@
             </a>
             <div>
                 <a href="faqs.html" class="me-3">FAQs</a>
-                <button id="contact" class="btn btn-sm btn-outline-secondary">Contact</button>
+                <button onclick="mailSender()" class="btn btn-sm btn-outline-secondary">Contact</button>
             </div>
         </div>
     </nav>
@@ -81,7 +81,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script>
+        const mailSender = () => {
+            window.location.href = "mailto:aungthuhein.dev@email.com";
+        }
+    </script>
 </body>
 
 </html>

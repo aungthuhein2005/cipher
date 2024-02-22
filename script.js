@@ -105,6 +105,6 @@ download.addEventListener('click',()=>{
     progressBar.parentElement.classList.add('d-none'); 
 })
 
-contact.addEventListener("click",(e)=>{
+const mailSender = () => {
     window.location.href = "mailto:aungthuhein.dev@email.com";
-})
+}
